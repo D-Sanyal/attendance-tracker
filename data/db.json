@@ -1,0 +1,778 @@
+{
+  "departments": [
+    {
+      "id": "dept-cse",
+      "code": "CSE",
+      "name": "Computer Science & Engineering"
+    },
+    {
+      "id": "dept-ece",
+      "code": "ECE",
+      "name": "Electronics & Communication"
+    },
+    {
+      "id": "dept-me",
+      "code": "ME",
+      "name": "Mechanical Engineering"
+    },
+    {
+      "id": "dept-civil",
+      "code": "CIVIL",
+      "name": "Civil Engineering"
+    }
+  ],
+  "users": [
+    {
+      "id": "admin-1",
+      "name": "Dr. Meera Iyer",
+      "login": "admin",
+      "passwordHash": "demo-salt-campusroll:a95c5e5d299b66d040127746f756e2000c7367bc771f77bccbeb5d111f456b15",
+      "role": "admin",
+      "departmentId": "dept-cse"
+    },
+    {
+      "id": "fac-cse",
+      "name": "Prof. Arjun Menon",
+      "login": "faculty.cse",
+      "passwordHash": "demo-salt-campusroll:a95c5e5d299b66d040127746f756e2000c7367bc771f77bccbeb5d111f456b15",
+      "role": "faculty",
+      "departmentId": "dept-cse"
+    },
+    {
+      "id": "fac-ece",
+      "name": "Prof. Kavya Nair",
+      "login": "faculty.ece",
+      "passwordHash": "demo-salt-campusroll:a95c5e5d299b66d040127746f756e2000c7367bc771f77bccbeb5d111f456b15",
+      "role": "faculty",
+      "departmentId": "dept-ece"
+    },
+    {
+      "id": "fac-me",
+      "name": "Prof. Rohan Desai",
+      "login": "faculty.me",
+      "passwordHash": "demo-salt-campusroll:a95c5e5d299b66d040127746f756e2000c7367bc771f77bccbeb5d111f456b15",
+      "role": "faculty",
+      "departmentId": "dept-me"
+    },
+    {
+      "id": "fac-civil",
+      "name": "Prof. Ananya Rao",
+      "login": "faculty.civil",
+      "passwordHash": "demo-salt-campusroll:a95c5e5d299b66d040127746f756e2000c7367bc771f77bccbeb5d111f456b15",
+      "role": "faculty",
+      "departmentId": "dept-civil"
+    },
+    {
+      "id": "stu-cse-1",
+      "name": "Aditi Sharma",
+      "login": "CSE2024001",
+      "passwordHash": "demo-salt-campusroll:a95c5e5d299b66d040127746f756e2000c7367bc771f77bccbeb5d111f456b15",
+      "role": "student",
+      "departmentId": "dept-cse",
+      "rollNo": "CSE2024001"
+    },
+    {
+      "id": "stu-cse-2",
+      "name": "Rahul Verma",
+      "login": "CSE2024002",
+      "passwordHash": "demo-salt-campusroll:a95c5e5d299b66d040127746f756e2000c7367bc771f77bccbeb5d111f456b15",
+      "role": "student",
+      "departmentId": "dept-cse",
+      "rollNo": "CSE2024002"
+    },
+    {
+      "id": "stu-cse-3",
+      "name": "Sneha Patel",
+      "login": "CSE2024003",
+      "passwordHash": "demo-salt-campusroll:a95c5e5d299b66d040127746f756e2000c7367bc771f77bccbeb5d111f456b15",
+      "role": "student",
+      "departmentId": "dept-cse",
+      "rollNo": "CSE2024003"
+    },
+    {
+      "id": "stu-cse-4",
+      "name": "Vikram Singh",
+      "login": "CSE2024004",
+      "passwordHash": "demo-salt-campusroll:a95c5e5d299b66d040127746f756e2000c7367bc771f77bccbeb5d111f456b15",
+      "role": "student",
+      "departmentId": "dept-cse",
+      "rollNo": "CSE2024004"
+    },
+    {
+      "id": "stu-cse-5",
+      "name": "Nisha Reddy",
+      "login": "CSE2024005",
+      "passwordHash": "demo-salt-campusroll:a95c5e5d299b66d040127746f756e2000c7367bc771f77bccbeb5d111f456b15",
+      "role": "student",
+      "departmentId": "dept-cse",
+      "rollNo": "CSE2024005"
+    },
+    {
+      "id": "stu-ece-1",
+      "name": "Ishaan Kapoor",
+      "login": "ECE2024001",
+      "passwordHash": "demo-salt-campusroll:a95c5e5d299b66d040127746f756e2000c7367bc771f77bccbeb5d111f456b15",
+      "role": "student",
+      "departmentId": "dept-ece",
+      "rollNo": "ECE2024001"
+    },
+    {
+      "id": "stu-ece-2",
+      "name": "Priya Das",
+      "login": "ECE2024002",
+      "passwordHash": "demo-salt-campusroll:a95c5e5d299b66d040127746f756e2000c7367bc771f77bccbeb5d111f456b15",
+      "role": "student",
+      "departmentId": "dept-ece",
+      "rollNo": "ECE2024002"
+    },
+    {
+      "id": "stu-ece-3",
+      "name": "Karthik Iyer",
+      "login": "ECE2024003",
+      "passwordHash": "demo-salt-campusroll:a95c5e5d299b66d040127746f756e2000c7367bc771f77bccbeb5d111f456b15",
+      "role": "student",
+      "departmentId": "dept-ece",
+      "rollNo": "ECE2024003"
+    },
+    {
+      "id": "stu-me-1",
+      "name": "Aman Gupta",
+      "login": "ME2024001",
+      "passwordHash": "demo-salt-campusroll:a95c5e5d299b66d040127746f756e2000c7367bc771f77bccbeb5d111f456b15",
+      "role": "student",
+      "departmentId": "dept-me",
+      "rollNo": "ME2024001"
+    },
+    {
+      "id": "stu-me-2",
+      "name": "Diya Joshi",
+      "login": "ME2024002",
+      "passwordHash": "demo-salt-campusroll:a95c5e5d299b66d040127746f756e2000c7367bc771f77bccbeb5d111f456b15",
+      "role": "student",
+      "departmentId": "dept-me",
+      "rollNo": "ME2024002"
+    },
+    {
+      "id": "stu-civil-1",
+      "name": "Farhan Ali",
+      "login": "CE2024001",
+      "passwordHash": "demo-salt-campusroll:a95c5e5d299b66d040127746f756e2000c7367bc771f77bccbeb5d111f456b15",
+      "role": "student",
+      "departmentId": "dept-civil",
+      "rollNo": "CE2024001"
+    },
+    {
+      "id": "stu-civil-2",
+      "name": "Meera Kulkarni",
+      "login": "CE2024002",
+      "passwordHash": "demo-salt-campusroll:a95c5e5d299b66d040127746f756e2000c7367bc771f77bccbeb5d111f456b15",
+      "role": "student",
+      "departmentId": "dept-civil",
+      "rollNo": "CE2024002"
+    }
+  ],
+  "courses": [
+    {
+      "id": "cse-dsa",
+      "code": "CS301",
+      "name": "Data Structures",
+      "departmentId": "dept-cse",
+      "facultyId": "fac-cse",
+      "minPercent": 75
+    },
+    {
+      "id": "cse-dbms",
+      "code": "CS305",
+      "name": "Database Systems",
+      "departmentId": "dept-cse",
+      "facultyId": "fac-cse",
+      "minPercent": 75
+    },
+    {
+      "id": "ece-dsp",
+      "code": "EC210",
+      "name": "Digital Signal Processing",
+      "departmentId": "dept-ece",
+      "facultyId": "fac-ece",
+      "minPercent": 75
+    },
+    {
+      "id": "me-thermo",
+      "code": "ME220",
+      "name": "Thermodynamics",
+      "departmentId": "dept-me",
+      "facultyId": "fac-me",
+      "minPercent": 75
+    },
+    {
+      "id": "civil-som",
+      "code": "CE201",
+      "name": "Strength of Materials",
+      "departmentId": "dept-civil",
+      "facultyId": "fac-civil",
+      "minPercent": 75
+    }
+  ],
+  "enrollments": [
+    {
+      "studentId": "stu-cse-1",
+      "courseId": "cse-dsa"
+    },
+    {
+      "studentId": "stu-cse-1",
+      "courseId": "cse-dbms"
+    },
+    {
+      "studentId": "stu-cse-2",
+      "courseId": "cse-dsa"
+    },
+    {
+      "studentId": "stu-cse-2",
+      "courseId": "cse-dbms"
+    },
+    {
+      "studentId": "stu-cse-3",
+      "courseId": "cse-dsa"
+    },
+    {
+      "studentId": "stu-cse-3",
+      "courseId": "cse-dbms"
+    },
+    {
+      "studentId": "stu-cse-4",
+      "courseId": "cse-dsa"
+    },
+    {
+      "studentId": "stu-cse-4",
+      "courseId": "cse-dbms"
+    },
+    {
+      "studentId": "stu-cse-5",
+      "courseId": "cse-dsa"
+    },
+    {
+      "studentId": "stu-cse-5",
+      "courseId": "cse-dbms"
+    },
+    {
+      "studentId": "stu-ece-1",
+      "courseId": "ece-dsp"
+    },
+    {
+      "studentId": "stu-ece-2",
+      "courseId": "ece-dsp"
+    },
+    {
+      "studentId": "stu-ece-3",
+      "courseId": "ece-dsp"
+    },
+    {
+      "studentId": "stu-me-1",
+      "courseId": "me-thermo"
+    },
+    {
+      "studentId": "stu-me-2",
+      "courseId": "me-thermo"
+    },
+    {
+      "studentId": "stu-civil-1",
+      "courseId": "civil-som"
+    },
+    {
+      "studentId": "stu-civil-2",
+      "courseId": "civil-som"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "cse-dsa-1",
+      "courseId": "cse-dsa",
+      "title": "Trees & Graphs — virtual lab",
+      "meetUrl": "https://meet.example.edu/cse-dsa-1",
+      "joinCode": "482110",
+      "startsAt": "2026-10-09T22:40:40.435Z",
+      "endsAt": "2026-10-09T23:40:40.435Z",
+      "status": "ended"
+    },
+    {
+      "id": "cse-dsa-2",
+      "courseId": "cse-dsa",
+      "title": "Hashing recap",
+      "meetUrl": "https://meet.example.edu/cse-dsa-2",
+      "joinCode": "482111",
+      "startsAt": "2026-10-10T22:40:40.435Z",
+      "endsAt": "2026-10-10T23:40:40.435Z",
+      "status": "ended"
+    },
+    {
+      "id": "cse-dsa-3",
+      "courseId": "cse-dsa",
+      "title": "Heaps office hours",
+      "meetUrl": "https://meet.example.edu/cse-dsa-3",
+      "joinCode": "482112",
+      "startsAt": "2026-10-11T22:40:40.435Z",
+      "endsAt": "2026-10-11T23:40:40.435Z",
+      "status": "ended"
+    },
+    {
+      "id": "cse-dsa-4",
+      "courseId": "cse-dsa",
+      "title": "Complexity clinic",
+      "meetUrl": "https://meet.example.edu/cse-dsa-4",
+      "joinCode": "482113",
+      "startsAt": "2026-10-12T22:40:40.435Z",
+      "endsAt": "2026-10-12T23:40:40.435Z",
+      "status": "ended"
+    },
+    {
+      "id": "cse-dsa-live",
+      "courseId": "cse-dsa",
+      "title": "AVL trees — live virtual class",
+      "meetUrl": "https://meet.example.edu/cse-dsa-live",
+      "joinCode": "749201",
+      "startsAt": "2026-10-13T22:28:40.435Z",
+      "endsAt": "2026-10-13T23:28:40.435Z",
+      "status": "live"
+    },
+    {
+      "id": "cse-dbms-1",
+      "courseId": "cse-dbms",
+      "title": "Normalization workshop",
+      "meetUrl": "https://meet.example.edu/cse-dbms-1",
+      "joinCode": "305101",
+      "startsAt": "2026-10-10T14:40:40.435Z",
+      "endsAt": "2026-10-10T15:40:40.435Z",
+      "status": "ended"
+    },
+    {
+      "id": "cse-dbms-2",
+      "courseId": "cse-dbms",
+      "title": "SQL joins lab",
+      "meetUrl": "https://meet.example.edu/cse-dbms-2",
+      "joinCode": "305102",
+      "startsAt": "2026-10-11T20:40:40.435Z",
+      "endsAt": "2026-10-11T21:40:40.435Z",
+      "status": "ended"
+    },
+    {
+      "id": "cse-dbms-3",
+      "courseId": "cse-dbms",
+      "title": "Indexing & query plans",
+      "meetUrl": "https://meet.example.edu/cse-dbms-3",
+      "joinCode": "305103",
+      "startsAt": "2026-10-13T02:40:40.435Z",
+      "endsAt": "2026-10-13T03:40:40.435Z",
+      "status": "ended"
+    },
+    {
+      "id": "ece-dsp-1",
+      "courseId": "ece-dsp",
+      "title": "FFT virtual studio",
+      "meetUrl": "https://meet.example.edu/ece-dsp-1",
+      "joinCode": "210101",
+      "startsAt": "2026-10-12T06:40:40.436Z",
+      "endsAt": "2026-10-12T07:40:40.436Z",
+      "status": "ended"
+    },
+    {
+      "id": "ece-dsp-2",
+      "courseId": "ece-dsp",
+      "title": "Filter design",
+      "meetUrl": "https://meet.example.edu/ece-dsp-2",
+      "joinCode": "210102",
+      "startsAt": "2026-10-13T06:40:40.436Z",
+      "endsAt": "2026-10-13T07:40:40.436Z",
+      "status": "ended"
+    },
+    {
+      "id": "me-thermo-1",
+      "courseId": "me-thermo",
+      "title": "First law problems",
+      "meetUrl": "https://meet.example.edu/me-thermo-1",
+      "joinCode": "220101",
+      "startsAt": "2026-10-12T16:40:40.436Z",
+      "endsAt": "2026-10-12T17:40:40.436Z",
+      "status": "ended"
+    },
+    {
+      "id": "civil-som-1",
+      "courseId": "civil-som",
+      "title": "Shear force diagrams",
+      "meetUrl": "https://meet.example.edu/civil-som-1",
+      "joinCode": "201101",
+      "startsAt": "2026-10-12T18:40:40.436Z",
+      "endsAt": "2026-10-12T19:40:40.436Z",
+      "status": "ended"
+    }
+  ],
+  "attendance": [
+    {
+      "id": "cse-dsa-1-stu-cse-1",
+      "sessionId": "cse-dsa-1",
+      "studentId": "stu-cse-1",
+      "status": "present",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "cse-dsa-1-stu-cse-2",
+      "sessionId": "cse-dsa-1",
+      "studentId": "stu-cse-2",
+      "status": "present",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "cse-dsa-1-stu-cse-3",
+      "sessionId": "cse-dsa-1",
+      "studentId": "stu-cse-3",
+      "status": "late",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "cse-dsa-1-stu-cse-4",
+      "sessionId": "cse-dsa-1",
+      "studentId": "stu-cse-4",
+      "status": "absent",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "cse-dsa-1-stu-cse-5",
+      "sessionId": "cse-dsa-1",
+      "studentId": "stu-cse-5",
+      "status": "present",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "cse-dsa-2-stu-cse-1",
+      "sessionId": "cse-dsa-2",
+      "studentId": "stu-cse-1",
+      "status": "present",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "cse-dsa-2-stu-cse-2",
+      "sessionId": "cse-dsa-2",
+      "studentId": "stu-cse-2",
+      "status": "absent",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "cse-dsa-2-stu-cse-3",
+      "sessionId": "cse-dsa-2",
+      "studentId": "stu-cse-3",
+      "status": "present",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "cse-dsa-2-stu-cse-4",
+      "sessionId": "cse-dsa-2",
+      "studentId": "stu-cse-4",
+      "status": "absent",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "cse-dsa-2-stu-cse-5",
+      "sessionId": "cse-dsa-2",
+      "studentId": "stu-cse-5",
+      "status": "present",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "cse-dsa-3-stu-cse-1",
+      "sessionId": "cse-dsa-3",
+      "studentId": "stu-cse-1",
+      "status": "present",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "cse-dsa-3-stu-cse-2",
+      "sessionId": "cse-dsa-3",
+      "studentId": "stu-cse-2",
+      "status": "present",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "cse-dsa-3-stu-cse-3",
+      "sessionId": "cse-dsa-3",
+      "studentId": "stu-cse-3",
+      "status": "present",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "cse-dsa-3-stu-cse-4",
+      "sessionId": "cse-dsa-3",
+      "studentId": "stu-cse-4",
+      "status": "late",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "cse-dsa-3-stu-cse-5",
+      "sessionId": "cse-dsa-3",
+      "studentId": "stu-cse-5",
+      "status": "absent",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "cse-dsa-4-stu-cse-1",
+      "sessionId": "cse-dsa-4",
+      "studentId": "stu-cse-1",
+      "status": "present",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "cse-dsa-4-stu-cse-2",
+      "sessionId": "cse-dsa-4",
+      "studentId": "stu-cse-2",
+      "status": "present",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "cse-dsa-4-stu-cse-3",
+      "sessionId": "cse-dsa-4",
+      "studentId": "stu-cse-3",
+      "status": "absent",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "cse-dsa-4-stu-cse-4",
+      "sessionId": "cse-dsa-4",
+      "studentId": "stu-cse-4",
+      "status": "absent",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "cse-dsa-4-stu-cse-5",
+      "sessionId": "cse-dsa-4",
+      "studentId": "stu-cse-5",
+      "status": "present",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "cse-dbms-1-stu-cse-1",
+      "sessionId": "cse-dbms-1",
+      "studentId": "stu-cse-1",
+      "status": "present",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "cse-dbms-1-stu-cse-2",
+      "sessionId": "cse-dbms-1",
+      "studentId": "stu-cse-2",
+      "status": "present",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "cse-dbms-1-stu-cse-3",
+      "sessionId": "cse-dbms-1",
+      "studentId": "stu-cse-3",
+      "status": "present",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "cse-dbms-1-stu-cse-4",
+      "sessionId": "cse-dbms-1",
+      "studentId": "stu-cse-4",
+      "status": "present",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "cse-dbms-1-stu-cse-5",
+      "sessionId": "cse-dbms-1",
+      "studentId": "stu-cse-5",
+      "status": "late",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "cse-dbms-2-stu-cse-1",
+      "sessionId": "cse-dbms-2",
+      "studentId": "stu-cse-1",
+      "status": "present",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "cse-dbms-2-stu-cse-2",
+      "sessionId": "cse-dbms-2",
+      "studentId": "stu-cse-2",
+      "status": "late",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "cse-dbms-2-stu-cse-3",
+      "sessionId": "cse-dbms-2",
+      "studentId": "stu-cse-3",
+      "status": "present",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "cse-dbms-2-stu-cse-4",
+      "sessionId": "cse-dbms-2",
+      "studentId": "stu-cse-4",
+      "status": "absent",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "cse-dbms-2-stu-cse-5",
+      "sessionId": "cse-dbms-2",
+      "studentId": "stu-cse-5",
+      "status": "present",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "cse-dbms-3-stu-cse-1",
+      "sessionId": "cse-dbms-3",
+      "studentId": "stu-cse-1",
+      "status": "present",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "cse-dbms-3-stu-cse-2",
+      "sessionId": "cse-dbms-3",
+      "studentId": "stu-cse-2",
+      "status": "present",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "cse-dbms-3-stu-cse-3",
+      "sessionId": "cse-dbms-3",
+      "studentId": "stu-cse-3",
+      "status": "present",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "cse-dbms-3-stu-cse-4",
+      "sessionId": "cse-dbms-3",
+      "studentId": "stu-cse-4",
+      "status": "absent",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "cse-dbms-3-stu-cse-5",
+      "sessionId": "cse-dbms-3",
+      "studentId": "stu-cse-5",
+      "status": "present",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "ece-dsp-1-stu-ece-1",
+      "sessionId": "ece-dsp-1",
+      "studentId": "stu-ece-1",
+      "status": "present",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "ece-dsp-1-stu-ece-2",
+      "sessionId": "ece-dsp-1",
+      "studentId": "stu-ece-2",
+      "status": "present",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "ece-dsp-1-stu-ece-3",
+      "sessionId": "ece-dsp-1",
+      "studentId": "stu-ece-3",
+      "status": "absent",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "ece-dsp-2-stu-ece-1",
+      "sessionId": "ece-dsp-2",
+      "studentId": "stu-ece-1",
+      "status": "present",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "ece-dsp-2-stu-ece-2",
+      "sessionId": "ece-dsp-2",
+      "studentId": "stu-ece-2",
+      "status": "late",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "ece-dsp-2-stu-ece-3",
+      "sessionId": "ece-dsp-2",
+      "studentId": "stu-ece-3",
+      "status": "present",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "me-thermo-1-stu-me-1",
+      "sessionId": "me-thermo-1",
+      "studentId": "stu-me-1",
+      "status": "present",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "me-thermo-1-stu-me-2",
+      "sessionId": "me-thermo-1",
+      "studentId": "stu-me-2",
+      "status": "absent",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "civil-som-1-stu-civil-1",
+      "sessionId": "civil-som-1",
+      "studentId": "stu-civil-1",
+      "status": "present",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "civil-som-1-stu-civil-2",
+      "sessionId": "civil-som-1",
+      "studentId": "stu-civil-2",
+      "status": "present",
+      "method": "code",
+      "markedAt": "2026-10-13T02:40:40.436Z"
+    },
+    {
+      "id": "76641ce6-4a4f-4a70-bd06-e41ebe1cd563",
+      "sessionId": "cse-dsa-live",
+      "studentId": "stu-cse-1",
+      "status": "late",
+      "method": "code",
+      "markedAt": "2026-10-13T22:40:56.563Z"
+    }
+  ]
+}
